@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Rejoins le salon de discusssion </h2>
+                <div class="form-input">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Rejoindre</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <div class="header">
+                <div class="logo">Projet ABCD Room</div>
+                <button id="exit-chat">Sortir</button>
+            </div>
+            <div class="messages">
+                <!-- Message will be inserted here -->
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input">
+                <button id="send-message"><a href="#"><i class='bx bxs-send'></i></a></button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="socket.io/socket.io.js"></script> 
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
